@@ -22,3 +22,11 @@ h5,
 h6 {
     font-family: 'Montserrat';
 }
+
+
+@media (max-width: 500px) {
+    .photos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+        grid-auto-rows: 250px !important;
+    }
+}

@@ -14,7 +14,10 @@ header {
 }
 
 main {
-    padding: 2em;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
     .photos {
         display: grid;
@@ -56,4 +59,13 @@ main {
         }
     }
 
+}
+
+
+@media (max-width: 500px) {
+
+    .photos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+        grid-auto-rows: 170px !important;
+    }
 }
